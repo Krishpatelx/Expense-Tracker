@@ -9,14 +9,14 @@ const PORT = process.env.PORT
 
 app.use(express.json())
 app.use(cors())
-app.get('/',(request,res)=>{
+app.get('/',(req,res)=>{
     res.send('Hello World')
 
 })
 const server = () => {
 app.listen(PORT, ()=> {
-    console.log('listenig to port:',PORT);
-})
+    console.log('listenig to port:', PORT);
+  })
 }
 
 server ()
